@@ -1,0 +1,164 @@
+
+/*header*/ 
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header .list ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .list ul li {
+    margin: 0 15px;
+}
+
+header .list ul li a {
+    text-decoration: none;
+    color: rgb(0, 68, 255);
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+header .list ul li a:hover {
+    color: grey;
+}
+
+header .icon i {
+    font-size: 18px;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header .icon i:hover {
+    color: gray;
+}
+
+/* Burger icon */
+.burger {
+    display: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+  /**/
+
+
+/* General styles */
+header a {
+    text-decoration: none; /* Removes the underline */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+p {
+    padding-right: 20px; /* Adjust as needed */
+}
+
+footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+section button{
+    width: 150px;
+    height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    margin: 20px 30px;
+    background-color: green;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+section button:active {
+    color: pink;
+    background-color: palevioletred;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+
+    header .list ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    header .list ul.active {
+        display: flex;
+    }
+    .burger {
+        display: block;
+    }
+
+    /* Adjustments for smaller screens */
+    body {
+        padding: 10px;
+    }
+
+    p {
+        padding-right: 10px; /* Adjust as needed */
+    }
+}

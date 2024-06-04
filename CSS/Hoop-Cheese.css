@@ -1,0 +1,251 @@
+
+/*header*/ 
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .logo img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+header .list ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .list ul li {
+  margin: 0 15px;
+}
+
+header .list ul li a {
+  text-decoration: none;
+  color: rgb(0, 68, 255);
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.1s;
+}
+
+header .list ul li a:hover {
+  color: grey;
+}
+
+header .icon i {
+  font-size: 18px;
+  color: black;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header .icon i:hover {
+  color: gray;
+}
+
+/* Burger icon */
+.burger {
+  display: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  header .list ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 10px 20px;
+  }
+  header .list ul.active {
+      display: flex;
+  }
+  .burger {
+      display: block;
+  }
+}
+
+/* desc */
+section .hoop_desc{
+    text-align: center;
+    margin:0 5px 20px 5px;
+}
+
+section .hoop_img img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 50px auto 40px auto;
+    box-shadow:0 0 10px rgba(0,0, 0, 0.2);
+    transition: 0.2s;
+}
+
+section .hoop_img img:hover {
+    transform: scale(1.1);
+}
+
+section .hoop_content{
+    max-width: 90%;
+    margin: 0 auto;
+    height: auto;
+    border: 1px solid  grey;
+    border-radius: 5px;
+    line-height: 20px;
+    background-color: beige;
+    box-shadow:0 0 10px rgba(0,0, 1, 0.2);
+    padding: 20px 10px;
+}
+
+
+
+/* fast fact */
+section .fast_fact{
+    width: 90%;
+    max-width: 1100px;
+    height: auto;
+    border: 1px solid  grey;
+    border-radius: 5px;
+    line-height: 20px;
+    background-color: beige;
+    box-shadow:0 0 10px rgba(0,0, 1, 0.2);
+    padding: 20px 10px;
+    margin: 20px auto;
+}
+
+/* what_is_cheese */
+section .what_is_cheese{
+    max-width: 90%;
+    width: 1100px;
+    height: auto;
+    border: 1px solid  grey;
+    border-radius: 5px;
+    line-height: 20px;
+    background-color: beige;
+    box-shadow:0 0 10px rgba(0,0, 1, 0.2);
+    padding: 20px 10px;
+    margin: 20px auto;
+    transition: 0.2s;
+}
+
+/* what_in_name */
+section .what_in_name{
+    max-width: 90%;
+    width: 1100px;
+    height: auto;
+    border: 1px solid  grey;
+    border-radius: 5px;
+    line-height: 20px;
+    background-color: beige;
+    box-shadow:0 0 10px rgba(0,0, 1, 0.2);
+    padding: 20px 10px;
+    margin: 20px auto;
+    transition: 0.2s;
+}
+
+/* how_made */
+section .how_made{
+    max-width: 90%;
+    width: 1100px;
+    height: auto;
+    border: 1px solid  grey;
+    border-radius: 5px;
+    line-height: 20px;
+    background-color: beige;
+    box-shadow:0 0 10px rgba(0,0, 1, 0.2);
+    padding: 20px 10px;
+    margin: 20px auto;
+    transition: 0.2s;
+}
+
+/* types */
+section .types{
+    max-width: 90%;
+    width: 1100px;
+    height: auto;
+    border: 1px solid  grey;
+    border-radius: 5px;
+    line-height: 20px;
+    background-color: beige;
+    box-shadow:0 0 10px rgba(0,0, 1, 0.2);
+    padding: 20px 10px;
+    margin: 20px auto;
+    transition: 0.2s;
+}
+
+/* Substitutes */
+section .Substitutes{
+    max-width: 90%;
+    width: 1100px;
+    height: auto;
+    border: 1px solid  grey;
+    border-radius: 5px;
+    line-height: 20px;
+    background-color: beige;
+    box-shadow:0 0 10px rgba(0,0, 1, 0.2);
+    padding: 20px 10px;
+    margin: 20px auto;
+    transition: 0.2s;
+}
+
+/* uses */
+section .uses{
+    max-width: 90%;
+    width: 1100px;
+    height: auto;
+    border: 1px solid  grey;
+    border-radius: 5px;
+    line-height: 20px;
+    background-color: beige;
+    box-shadow:0 0 10px rgba(0,0, 1, 0.2);
+    padding: 20px 10px;
+    margin: 20px auto;
+    transition: 0.2s;
+}
+
+section .uses > .chees_image_2 img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.1s;
+    margin: 20px;
+    box-shadow:0 0 20px rgba(0,0, 1, 0.2);
+    justify-content: center;
+}
+
+section .uses > .chees_image_2 img:hover{
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

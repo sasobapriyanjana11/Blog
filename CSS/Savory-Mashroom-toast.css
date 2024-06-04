@@ -1,0 +1,303 @@
+
+/*header*/ 
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header .list ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .list ul li {
+    margin: 0 15px;
+}
+
+header .list ul li a {
+    text-decoration: none;
+    color: rgb(0, 68, 255);
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+header .list ul li a:hover {
+    color: grey;
+}
+
+header .icon i {
+    font-size: 18px;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header .icon i:hover {
+    color: gray;
+}
+
+/* Burger icon */
+.burger {
+    display: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+  /**/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+.name {
+    margin-left: 30px;
+}
+
+.name img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+
+.name img:hover {
+    transform: scale(1.1);
+}
+
+.time_to_cook {
+    width: 250px;
+    height: 200px;
+    padding: 30px 60px;
+    border: 1px solid beige;
+    border-radius: 5px;
+    background-color: beige;
+    margin: 30px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    margin: 20px 30px;
+    background-color: green;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+button:active {
+    color: pink;
+    background-color: palevioletred;
+}
+
+section p {
+    padding: 10px;
+    margin: 30px;
+    text-align: left;
+}
+
+article .Ingredients {
+    margin: 30px;
+}
+
+article .Ingredients ul {
+    line-height: 20px;
+}
+
+article .Ingredients hr {
+    font-weight: 200;
+    margin-bottom: 20px;
+    animation-name: line1;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes line1 {
+    0% {
+        width: 0vw;
+    }
+
+    100% {
+        width: 90vw;
+    }
+}
+
+article .mashroom_img img {
+    width: 100px;
+    height: 100px;
+    padding-left: 10px;
+    margin: 30px;
+}
+
+section .steps_to_make_it {
+    width: 100%;
+    margin: 20px 30px;
+}
+
+section .steps_to_make_it hr {
+    font-weight: 200;
+    margin-bottom: 20px;
+    animation-name: line2;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes line2 {
+    0% {
+        width: 0vw;
+    }
+
+    100% {
+        width: 90vw;
+    }
+}
+
+section .steps_to_make_it img {
+    width: 250px;
+    height: 250px;
+    margin: 30px 20px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+section .steps_to_make_it img:hover {
+    transform: scale(1.1);
+}
+
+section .Glass_Bakeware_Warning {
+    width: 650px;
+    height: 150px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color: aquamarine;
+    margin: 20px 30px;
+    transition: 0.2s;
+}
+
+section .Glass_Bakeware_Warning:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+section .Glass_Bakeware_Warning h3 {
+    text-align: center;
+}
+
+section .Recipe_Variation {
+    width: 650px;
+    height: 150px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color: aquamarine;
+    margin: 20px 30px;
+    transition: 0.2s;
+}
+
+section .Recipe_Variation:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+section .Recipe_Variation h3 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: grid;
+}
+
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    header .list ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    header .list ul.active {
+        display: flex;
+    }
+    .burger {
+        display: block;
+    }
+
+    section .steps_to_make_it img {
+        width: 200px;
+        height: 200px;
+    }
+
+    section .Glass_Bakeware_Warning,
+    section .Recipe_Variation {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+/* For screens smaller than 480px */
+@media only screen and (max-width: 480px) {
+    header .navbar .icon i {
+        font-size: 20px;
+    }
+
+    section .steps_to_make_it img {
+        width: 150px;
+        height: 150px;
+    }
+
+    section .Glass_Bakeware_Warning,
+    section .Recipe_Variation {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+
+

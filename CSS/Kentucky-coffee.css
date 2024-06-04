@@ -1,0 +1,290 @@
+
+/*header*/ 
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header .list ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .list ul li {
+    margin: 0 15px;
+}
+
+header .list ul li a {
+    text-decoration: none;
+    color: rgb(0, 68, 255);
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+header .list ul li a:hover {
+    color: grey;
+}
+
+header .icon i {
+    font-size: 18px;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header .icon i:hover {
+    color: gray;
+}
+
+/* Burger icon */
+.burger {
+    display: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+
+/*  */
+.name {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.name img {
+    /* width: 100%; */
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    transition: 0.2s;
+}
+
+.name img:hover {
+    transform: scale(1.1);
+}
+
+.time_to_cook {
+    width: 100%;
+    max-width: 250px;
+    padding: 30px 20px;
+    border: 1px solid beige;
+    border-radius: 5px;
+    background-color: beige;
+    margin: 30px auto;
+}
+
+section .content {
+    padding: 2px;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+section p {
+    padding: 10px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+section .Ingredients {
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+section .Ingredients ul {
+    line-height: 20px;
+}
+
+section .Ingredients hr {
+    font-weight: 200;
+    margin-bottom: 20px;
+    animation-name: line;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes line {
+    0% {
+        width: 0vw;
+    }
+    100% {
+        width: 90vw;
+    }
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    margin: 20px auto;
+    background-color: green;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+button:active {
+    color: pink;
+    background-color: palevioletred;
+}
+
+section .steps_to_make_it {
+    width: 100%;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section .steps_to_make_it img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 30px auto;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+section .steps_to_make_it img:hover {
+    transform: scale(1.1);
+}
+
+section .tips,
+section .variation {
+    width: 100%;
+    max-width: 650px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color: aquamarine;
+    margin: 20px auto;
+    transition: 0.2s;
+}
+
+section .tips:hover,
+section .variation:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+section .tips ul li {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+section .tips h2,
+section .variation h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+section h2 {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section .how_to_strong_coffee,
+section .what_are_bc_beans {
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/*  */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+p {
+    padding-right: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  
+
+    header .navbar .logo img {
+        margin: 0 auto;
+    }
+
+    header .list ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    header .list ul.active {
+        display: flex;
+    }
+    .burger {
+        display: block;
+    }
+
+    .name img {
+        max-width: 250px;
+    }
+
+    .time_to_cook {
+        max-width: 200px;
+    }
+
+    section .content,
+    section .Ingredients,
+    section .steps_to_make_it,
+    section .tips,
+    section .variation,
+    section .how_to_strong_coffee,
+    section .what_are_bc_beans {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}

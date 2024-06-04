@@ -1,0 +1,214 @@
+
+/*header*/ 
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header .list ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .list ul li {
+    margin: 0 15px;
+}
+
+header .list ul li a {
+    text-decoration: none;
+    color: rgb(0, 68, 255);
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+header .list ul li a:hover {
+    color: grey;
+}
+
+header .icon i {
+    font-size: 18px;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header .icon i:hover {
+    color: gray;
+}
+
+/* Burger icon */
+.burger {
+    display: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+
+/*  */
+
+.name {
+    margin: 30px;
+}
+
+.time_to_cook,
+.desc,
+.making_laddoo_for_dewali,
+.what_do_you_need_to_make,
+.How_to_make,
+.Many_kids,
+.tips_for_making_laddoo,
+.Make_ahead,
+.store,
+.just_articles,
+.article_laddoo,
+.Ingredients,
+.steps_to_make_it {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.time_to_cook {
+    max-width: 400px;
+}
+
+section .desc p,
+section .making_laddoo_for_dewali p,
+section .what_do_you_need_to_make p,
+section .How_to_make p,
+section .Many_kids p,
+section .tips_for_making_laddoo,
+section .Make_ahead,
+section .store,
+section .just_articles,
+.article_laddoo p,
+.Ingredients ul,
+.steps_to_make_it {
+    width: 100%;
+}
+
+section .steps_to_make_it img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    object-fit: cover;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    margin: 20px auto;
+    background-color: green;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+button:active {
+    color: pink;
+    background-color: palevioletred;
+}
+
+h6 {
+    margin: 30px auto;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  
+    header .navbar .logo img {
+        width: 60px;
+        height: 60px;
+    } 
+
+    header .list ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    header .list ul.active {
+        display: flex;
+    }
+    .burger {
+        display: block;
+    }
+
+    .time_to_cook {
+        max-width: 100%;
+    }
+
+    .name {
+        margin: 20px 10px;
+    }
+
+    button {
+        width: 120px;
+        height: 35px;
+        margin: 20px auto;
+        font-size: 14px;
+    }
+
+    section .desc,
+    section .making_laddoo_for_dewali,
+    section .what_do_you_need_to_make,
+    section .How_to_make,
+    section .Many_kids,
+    section .tips_for_making_laddoo,
+    section .Make_ahead,
+    section .store,
+    section .just_articles,
+    .article_laddoo,
+    .Ingredients,
+    .steps_to_make_it {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 14px;
+        font-size: 20px;
+    }
+
+    section .steps_to_make_it img {
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,228 @@
+
+/*header*/ 
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header .list ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .list ul li {
+    margin: 0 15px;
+}
+
+header .list ul li a {
+    text-decoration: none;
+    color: rgb(0, 68, 255);
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+header .list ul li a:hover {
+    color: grey;
+}
+
+header .icon i {
+    font-size: 18px;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header .icon i:hover {
+    color: gray;
+}
+
+/* Burger icon */
+.burger {
+    display: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+
+/* content */
+.name {
+    margin: 100px auto 50px;
+    text-align: center;
+}
+
+.name img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.name img:hover {
+    transform: scale(1.05);
+}
+
+section p {
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+section .time_to_cook {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid beige;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:active {
+    color: pink;
+    background-color: palevioletred;
+}
+
+/* Recipe Description */
+article.desc,
+article .pastry,
+article .filling,
+article .assembling,
+article .variation,
+article .choosing,
+article .how_to_store,
+article .runny_pie {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+
+article.desc p,
+article .pastry ul,
+article .filling ul,
+article .assembling ul,
+article .variation p,
+article .choosing p,
+article .how_to_store p,
+article .runny_pie p {
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+article .steps_to_make_it,
+article .make_filling,
+article .assemble_the_pie,
+article .variation,
+article .choosing,
+article .how_to_store,
+article .runny_pie {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    header .list ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    header .list ul.active {
+        display: flex;
+    }
+    .burger {
+        display: block;
+    }
+
+
+
+    header .navbar .logo img {
+        margin-bottom: 10px;
+    }
+
+
+
+    .name {
+        margin-top: 50px;
+    }
+
+    .name img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    section p {
+        padding: 0 10px;
+    }
+
+    article.desc,
+    article .pastry,
+    article .filling,
+    article .assembling,
+    article .variation,
+    article .choosing,
+    article .how_to_store,
+    article .runny_pie {
+        max-width: 90%;
+    }
+}
+

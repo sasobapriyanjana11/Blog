@@ -1,0 +1,263 @@
+/*header*/ 
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header .list ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .list ul li {
+    margin: 0 15px;
+}
+
+header .list ul li a {
+    text-decoration: none;
+    color: rgb(0, 68, 255);
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+header .list ul li a:hover {
+    color: grey;
+}
+
+header .icon i {
+    font-size: 18px;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header .icon i:hover {
+    color: gray;
+}
+
+/* Burger icon */
+.burger {
+    display: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header .list ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    header .list ul.active {
+        display: flex;
+    }
+    .burger {
+        display: block;
+    }
+}
+  /**/
+  
+
+
+/* blog image */
+  
+
+section .main #blogImage {
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Ensure the image does not overflow its container */
+    text-align: center; /* Center the image horizontally */
+}
+
+section .main #blogImage img {
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+    height: auto; /* Maintain the aspect ratio */
+    vertical-align: middle; /* Align the image vertically */
+}
+
+
+
+/*  */
+.Recipie{
+    width: 100%;
+    padding: 70px 0;
+   
+
+}
+ 
+.Recipie h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+  .Recipie h1 span{
+    color: gray;
+    margin-left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+   .Recipie h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: burlywood;
+    display: block;
+    position: relative;
+    bottom: 15px;
+   }
+   
+   .Recipie .menu_box {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 15px;
+}
+
+
+@media screen and (min-width: 576px) {
+    .Recipie .menu_box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Recipie .menu_box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Recipie .menu_box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.Recipie .menu_box .menu_card {
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.Recipie .menu_box .menu_card .menu_image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.Recipie .menu_box .menu_card .menu_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+
+.Recipie .menu_box .menu_card .menu_image:hover img {
+    transform: scale(1.1);
+}
+
+.Recipie .menu_box .menu_card .menu_info a h2 {
+    text-align: center;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.Recipie .menu_box .menu_card .menu_info a h2:hover {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ 
+   
+
+.Recipie .menu_box .menu_card:hover .small_card {
+    position: relative;
+    top: -160px;
+    right: 5px;
+    opacity: 1;
+}
+
+
+.Recipie .menu_box .menu_card .small_card i {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: black;
+    cursor: pointer;
+    text-shadow: 0 0 6px black;
+    transition: 0.2s;
+}
+
+.Recipie .menu_box .menu_card .small_card i:hover {
+    color: burlywood;
+    
+}
+
+.Recipie .menu_box .menu_card  .menu_icon {
+    color: chocolate;
+    text-align: center;
+    margin: 10px 0 20px 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+ 
+
+
+
+
+
+
+
